@@ -21,3 +21,8 @@ type in "make install" to install pip packages
 12. Make changes to main.py (This is where the main code goes, it imports mylib.logic.py file)
 13. Git push changes but git pull first because of the changes made in github actions inside github itself "git pull" and then "git config pull.rebase false  # merge" then "git pull" again and finally "git push"
 14. Add linting to Makefile = pylint --disable=R,C *.py mylib/*.py, test with "make lint"
+15. git add .github/
+16. git push changes (make sure workflows are enabled for gitpod -> check dashboard and preferences)
+17. Create a test file "test_logic.py" 
+18. Add this to the Makefile under "test" python -m pytest -vv --cov=mylib test_logic.py then type make test to test
+19. Update the .yml file to include this
