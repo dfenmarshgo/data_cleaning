@@ -19,3 +19,5 @@ type in "make install" to install pip packages
 10. Add black *.py mylib/*.py to the Makefile under "format"
 11. Run "make format"
 12. Make changes to main.py (This is where the main code goes, it imports mylib.logic.py file)
+13. Git push changes but git pull first because of the changes made in github actions inside github itself "git pull" and then "git config pull.rebase false  # merge" then "git pull" again and finally "git push"
+14. Add linting to Makefile = pylint --disable=R,C *.py mylib/*.py, test with "make lint"
