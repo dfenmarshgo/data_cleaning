@@ -26,3 +26,5 @@ type in "make install" to install pip packages
 17. Create a test file "test_logic.py" 
 18. Add this to the Makefile under "test" python -m pytest -vv --cov=mylib test_logic.py then type make test to test
 19. Update the .yml file to include this
+20. Create a CLI for the application/script using Google Fire and give user permissions  chmod +x cli-fire.py - then run it with this: ./cli-fire.py --help to test logic
+
