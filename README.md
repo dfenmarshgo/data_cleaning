@@ -27,4 +27,5 @@ type in "make install" to install pip packages
 18. Add this to the Makefile under "test" python -m pytest -vv --cov=mylib test_logic.py then type make test to test
 19. Update the .yml file to include this
 20. Create a CLI for the application/script using Google Fire and give user permissions  chmod +x cli-fire.py - then run it with this: ./cli-fire.py --help to test logic
-
+21. Add FastAPI and Uvicorn and testing capabilities
+22. Change Makefile and Dockerfile -> Use from python:3.8.13-slim-buster in DockerFile
